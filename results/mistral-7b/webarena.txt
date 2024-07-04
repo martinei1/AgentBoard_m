@@ -1,0 +1,5 @@
+[EXP] 0: [success_rate]: 0.0, [progress_rate]: 0.125, [grounding_acc]: 0.2, [score_state]: [(2, 0.125)] 
+[EXP] 1: [success_rate]: 0.0, [progress_rate]: 0.5, [grounding_acc]: 0.2222222222222222, [score_state]: [(1, 0.25), (2, 0.5)] 
+[EXP] 2: [success_rate]: 0.0, [progress_rate]: 0.0, [grounding_acc]: 0.1111111111111111, [score_state]: [] 
+[EXP] 3: [success_rate]: 0.0, [progress_rate]: 0.5, [grounding_acc]: 0.2222222222222222, [score_state]: [(1, 0.5)] 
+[EXP] 4: [success_rate]: 0.0, [progress_rate]: 0.0, [grounding_acc]: 0.2, [score_state]: [] 
