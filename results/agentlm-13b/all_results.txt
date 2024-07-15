@@ -1,0 +1,2 @@
+{"task_name": "alfworld", "success_rate": 0.029850746268656716, "progress_rate": 0.18345771144278605, "grounding_acc": 0.5256218905472639, "success_rate_hard": 0.00909090909090909, "success_rate_easy": 0.125, "progress_rate_hard": 0.16590909090909092, "progress_rate_easy": 0.2638888888888889}
+{"task_name": "scienceworld", "success_rate": 0.0, "progress_rate": 0.15010141093474427, "grounding_acc": 0.08259259259259258, "success_rate_hard": 0.0, "success_rate_easy": 0.0, "progress_rate_hard": 0.14302012471655332, "progress_rate_easy": 0.16176470588235295}
