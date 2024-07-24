@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<head>
+    <style>
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<html>
+    <body>
+     <pre>sites: ['gitlab']
+task_id: 806
+require_login: True
+storage_state: agentboard/.auth/gitlab_state.json
+start_url: http://ec2-3-131-244-37.us-east-2.compute.amazonaws.com:8023
+geolocation: None
+intent_template: Submit a merge request for {{source_branch}} branch to be merged into {{target_branch}} branch, assign {{reviewer}} as the reviewer
+instantiation_dict: {'source_branch': 'a11yproject.com/redesign', 'target_branch': 'markdown-figure-block', 'reviewer': 'myself'}
+intent: Submit a merge request for a11yproject.com/redesign branch to be merged into markdown-figure-block branch, assign myself as the reviewer
+require_reset: False
+eval: {'eval_types': ['url_match', 'program_html'], 'reference_answers': None, 'reference_url': 'http://ec2-3-131-244-37.us-east-2.compute.amazonaws.com:8023/a11yproject/a11yproject.com/-/merge_requests/new?merge_request%5Bsource_project_id%5D=174&merge_request%5Bsource_branch%5D=redesign&merge_request%5Btarget_project_id%5D=174&merge_request%5Btarget_branch%5D=feature%2Fmarkdown-figure-block', 'program_html': [{'url': 'last', 'locator': 'document.querySelectorAll(".detail-page-description > a.gl-font-monospace")[0].outerText', 'required_contents': {'exact_match': 'redesign'}}, {'url': 'last', 'locator': 'document.querySelectorAll(".detail-page-description > a.gl-font-monospace")[1].outerText', 'required_contents': {'exact_match': 'feature/markdown-figure-block'}}, {'url': 'last', 'locator': "document.querySelector('.block.reviewer').outerText", 'required_contents': {'must_include': ['Byte Blaze']}}], 'url_note': 'GOLD in PRED'}
+intent_template_id: 335
+difficulty: hard
+</pre>
+
+    </body>
+</html>

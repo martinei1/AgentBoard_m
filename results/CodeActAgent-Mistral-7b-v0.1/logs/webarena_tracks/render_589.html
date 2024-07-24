@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<head>
+    <style>
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<html>
+    <body>
+     <pre>sites: ['shopping']
+task_id: 589
+require_login: True
+storage_state: agentboard/.auth/shopping_state.json
+start_url: http://ec2-3-131-244-37.us-east-2.compute.amazonaws.com:7770
+geolocation: None
+intent_template: Rate my recent purchase of {{product}} with {{num_star}} stars, using my nickname {{nickname}}?
+instantiation_dict: {'product': 'Mini Wireless Bluetooth Speaker', 'num_star': 2, 'nickname': 'SimpleEmma'}
+intent: Rate my recent purchase of Mini Wireless Bluetooth Speaker in February 2023 with 2 stars, using my nickname SimpleEmma. Other uploaded content could be filled with "None"
+require_reset: False
+eval: {'eval_types': ['program_html'], 'reference_answers': None, 'reference_url': '', 'program_html': [{'url': 'last', 'locator': "func:shopping_get_sku_latest_review_rating('B09P7BFL4H')", 'required_contents': {'must_include': ['40']}}, {'url': 'last', 'locator': "func:shopping_get_sku_latest_review_author('B09P7BFL4H')", 'required_contents': {'must_include': ['SimpleEmma']}}]}
+intent_template_id: 194
+difficulty: hard
+</pre>
+
+    </body>
+</html>

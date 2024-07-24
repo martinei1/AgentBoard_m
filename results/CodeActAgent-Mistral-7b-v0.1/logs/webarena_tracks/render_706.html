@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<head>
+    <style>
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<html>
+    <body>
+     <pre>sites: ['shopping_admin']
+task_id: 706
+require_login: True
+storage_state: agentboard/.auth/shopping_admin_state.json
+start_url: http://ec2-3-131-244-37.us-east-2.compute.amazonaws.com:7780/admin
+geolocation: None
+intent_template: Today is 3/15/2023, generate a {{report}} {{time_span}}
+instantiation_dict: {'report': 'refund report', 'time_span': 'for Q1'}
+intent: Today is 3/15/2023, generate a refund report for Q1
+require_reset: False
+eval: {'eval_types': ['url_match', 'program_html'], 'reference_answers': None, 'reference_url': 'http://ec2-3-131-244-37.us-east-2.compute.amazonaws.com:7780/admin/reports/report_sales/refunded/filter/', 'program_html': [{'url': 'last', 'locator': 'document.querySelector(\'[id="sales_report_from"\').value', 'required_contents': {'exact_match': '1/1/23'}}, {'url': 'last', 'locator': 'document.querySelector(\'[id="sales_report_to"\').value', 'required_contents': {'exact_match': '3/31/23'}}], 'url_note': 'GOLD in PRED'}
+intent_template_id: 268
+difficulty: hard
+</pre>
+
+    </body>
+</html>

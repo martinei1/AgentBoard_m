@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<head>
+    <style>
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<html>
+    <body>
+     <pre>sites: ['reddit']
+task_id: 651
+require_login: True
+storage_state: agentboard/.auth/reddit_state.json
+start_url: http://ec2-3-131-244-37.us-east-2.compute.amazonaws.com:9999/f/pittsburgh/45899/driving-in-pittsburgh-summed-up-by-one-traffic-sign
+geolocation: None
+intent_template: Reply to {{position_description}} with my comment "{{content_description}}"
+instantiation_dict: {'position_description': 'the post', 'content_description': 'Yeah, pittsburgh traffic, you know...'}
+intent: Reply to the post with my comment "Yeah, pittsburgh traffic, you know..."
+require_reset: False
+eval: {'eval_types': ['url_match', 'program_html'], 'reference_answers': None, 'reference_url': 'http://ec2-3-131-244-37.us-east-2.compute.amazonaws.com:9999/f/pittsburgh/45899/driving-in-pittsburgh-summed-up-by-one-traffic-sign', 'program_html': [{'url': 'last', 'locator': "document.querySelector('.comment__body').outerText", 'required_contents': {'exact_match': 'Yeah, pittsburgh traffic, you know...'}}], 'url_note': 'GOLD in PRED'}
+intent_template_id: 23
+difficulty: easy
+</pre>
+
+    </body>
+</html>

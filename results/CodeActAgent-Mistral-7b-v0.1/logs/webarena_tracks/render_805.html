@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<head>
+    <style>
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<html>
+    <body>
+     <pre>sites: ['gitlab']
+task_id: 805
+require_login: True
+storage_state: agentboard/.auth/gitlab_state.json
+start_url: http://ec2-3-131-244-37.us-east-2.compute.amazonaws.com:8023/a11yproject/a11yproject.com
+geolocation: None
+intent_template: Submit a merge request for {{source_branch}} to be merged into {{target_branch}} branch, assign {{reviewer}} as the reviewer
+instantiation_dict: {'source_branch': 'the branch that implements the support of template strings', 'target_branch': 'master', 'reviewer': 'myself and Roshan'}
+intent: Submit a merge request for the branch that implements the support of template strings to be merged into master branch, assign myself and Roshan as the reviewer
+require_reset: False
+eval: {'eval_types': ['url_match', 'program_html'], 'reference_answers': None, 'reference_url': 'http://ec2-3-131-244-37.us-east-2.compute.amazonaws.com:8023/a11yproject/a11yproject.com/-/merge_requests/new?merge_request%5Bsource_project_id%5D=174&merge_request%5Bsource_branch%5D=feature%2Freplace-gulp&merge_request%5Btarget_project_id%5D=174&merge_request%5Btarget_branch%5D=main', 'program_html': [{'url': 'last', 'locator': 'document.querySelectorAll(".detail-page-description > a.gl-font-monospace")[0].outerText', 'required_contents': {'exact_match': 'feature/replace-gulp'}}, {'url': 'last', 'locator': 'document.querySelectorAll(".detail-page-description > a.gl-font-monospace")[1].outerText', 'required_contents': {'exact_match': 'main'}}, {'url': 'last', 'locator': "document.querySelector('.block.reviewer').outerText", 'required_contents': {'must_include': ['Byte Blaze', 'Roshan Jossy']}}], 'url_note': 'GOLD in PRED'}
+intent_template_id: 335
+difficulty: hard
+</pre>
+
+    </body>
+</html>

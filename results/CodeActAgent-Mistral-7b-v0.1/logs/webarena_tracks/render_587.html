@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<head>
+    <style>
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<html>
+    <body>
+     <pre>sites: ['shopping']
+task_id: 587
+require_login: True
+storage_state: agentboard/.auth/shopping_state.json
+start_url: http://ec2-3-131-244-37.us-east-2.compute.amazonaws.com:7770
+geolocation: None
+intent_template: Rate my recent purchase of {{product}} with {{num_star}} stars, using my nickname {{nickname}}?
+instantiation_dict: {'product': 'PS3 Remote Controllers', 'num_star': 3, 'nickname': 'GamingEmma'}
+intent: Rate my purchase of PS3 Remote Controllers in March 2023 with 3 stars, using my nickname GamingEmma. Other uploaded content could be filled with "None"
+require_reset: False
+eval: {'eval_types': ['program_html'], 'reference_answers': None, 'reference_url': '', 'program_html': [{'url': 'last', 'locator': "func:shopping_get_sku_latest_review_rating('B0041MSF2S')", 'required_contents': {'must_include': ['60']}}, {'url': 'last', 'locator': "func:shopping_get_sku_latest_review_author('B0041MSF2S')", 'required_contents': {'must_include': ['GamingEmma']}}]}
+intent_template_id: 194
+difficulty: hard
+</pre>
+
+    </body>
+</html>

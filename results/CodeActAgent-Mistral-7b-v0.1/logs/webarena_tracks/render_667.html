@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<head>
+    <style>
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<html>
+    <body>
+     <pre>sites: ['gitlab']
+task_id: 667
+require_login: True
+storage_state: agentboard/.auth/gitlab_state.json
+start_url: http://ec2-3-131-244-37.us-east-2.compute.amazonaws.com:8023/primer/design
+geolocation: None
+intent_template: Submit a merge request for {{source_branch}} branch to be merged into {{target_branch}} branch, assign {{reviewer}} as the reviewer
+instantiation_dict: {'source_branch': 'dialog-component', 'target_branch': 'bump-doctocat', 'reviewer': 'primer'}
+intent: Submit a merge request for dialog-component branch to be merged into bump-doctocat branch, assign primer as the reviewer
+require_reset: False
+eval: {'eval_types': ['url_match', 'program_html'], 'reference_answers': None, 'reference_url': 'http://ec2-3-131-244-37.us-east-2.compute.amazonaws.com:8023/primer/design/-/merge_requests/new?merge_request%5Bsource_project_id%5D=180&merge_request%5Bsource_branch%5D=dialog-component&merge_request%5Btarget_project_id%5D=180&merge_request%5Btarget_branch%5D=bump-doctocat', 'program_html': [{'url': 'last', 'locator': 'document.querySelectorAll(".detail-page-description > a.gl-font-monospace")[1].outerText', 'required_contents': {'exact_match': 'bump-doctocat'}}, {'url': 'last', 'locator': 'document.querySelectorAll(".detail-page-description > a.gl-font-monospace")[0].outerText', 'required_contents': {'exact_match': 'dialog-component'}}, {'url': 'last', 'locator': "document.querySelector('.block.reviewer').outerText", 'required_contents': {'must_include': ['Primer']}}], 'url_note': 'GOLD in PRED'}
+intent_template_id: 335
+difficulty: hard
+</pre>
+
+    </body>
+</html>

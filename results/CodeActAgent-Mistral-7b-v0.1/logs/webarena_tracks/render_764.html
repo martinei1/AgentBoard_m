@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<head>
+    <style>
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<html>
+    <body>
+     <pre>sites: ['map']
+task_id: 764
+require_login: True
+storage_state: None
+start_url: http://ec2-3-131-244-37.us-east-2.compute.amazonaws.com:3000
+geolocation: None
+intent_template: Find the walkway to the closest {{store}} from {{location}}.
+instantiation_dict: {'store': 'Target', 'location': '401 Shady Ave, Pittsburgh'}
+intent: Find the walkway to the closest Target from 401 Shady Ave, Pittsburgh.
+require_reset: False
+eval: {'eval_types': ['program_html'], 'reference_answers': None, 'reference_url': '', 'program_html': [{'url': 'last', 'locator': 'document.querySelector("div#content select.routing_engines").selectedIndex', 'required_contents': {'exact_match': '2'}}, {'url': 'last', 'locator': 'document.querySelector(\'[name="route_from"\').value', 'required_contents': {'must_include': ['401, Shady Avenue, Shadyside']}}, {'url': 'last', 'locator': 'document.querySelector(\'[name="route_to"\').value', 'required_contents': {'must_include': ['Target, 6231, Penn Avenue, East Liberty']}}]}
+intent_template_id: 75
+difficulty: hard
+</pre>
+
+    </body>
+</html>
